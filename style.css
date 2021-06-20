@@ -1,0 +1,258 @@
+/* Menu hamburguer */
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    width: 60px;
+    height: 60px;
+    background-color: #F2E530; 
+    border-radius: 50%;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+    cursor: pointer;
+    box-shadow: 0 0 0 0px #F2E530, 0 0 0 0px #F2E530;
+    transition: .8s ease-in-out;
+    z-index: 1000000;
+}
+.menu:hover{
+    box-shadow: 0 0 0 8px #F2E530, 0 0 0 8px #F2E530;
+    z-index: 100000;
+}
+.hamburguer{
+    display: block;
+    background-color: black;
+    width: 30px;
+    height: 2px;
+    position: relative;
+    top: 29px;
+    left: 15px;
+    transition: .5s ease-in-out;
+}
+.hamburguer:before,
+.hamburguer:after{
+    background-color: black;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+.hamburguer:before{
+    top: -10px;
+}
+.hamburguer:after{
+    bottom: -10px;
+}
+input:checked ~ ul{
+    visibility: visible;
+}
+input:checked~label .menu{
+    box-shadow: 0 0 0 150vw #F2E530, 0 0 0 220vw #F2E530;
+}
+input:checked ~ label .hamburguer{
+    transform: rotate(45deg);
+}
+input:checked ~ label .hamburguer:before{
+    transform: rotate(90deg);
+    top:0;
+}
+input:checked ~ label .hamburguer:after{
+    transform: rotate(90deg);
+    bottom:0;
+}
+ul.ul-hamburguer{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    transition: .25s .3s ease-in-out;
+    visibility: hidden;
+    z-index: 1000000;
+}
+a.li{
+    display: block;
+    color:black;
+    text-decoration: none;
+    font-size: 200%;
+}
+
+/* CSS do Dicionário */
+
+body{
+    font-family: Monospace, Arial;
+    color: #0D0D0D;
+}
+
+.cor{
+    background-color: #F2E530;
+    height: 70%;
+}
+
+ .texto-grid{
+    text-align: center;
+    font-size: 30px;
+    color: #0D0D0D;
+    text-decoration: none;
+
+}
+
+.link{
+    text-decoration: none;
+    color: #0D0D0D;
+    font-size: large;
+}
+
+.centralizar{
+    text-align: center;
+}
+
+.footer{ 
+    text-align: justify;
+    margin-right: 60px;
+    margin-top: 100px;
+} 
+
+.titulo{
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-size: 600%;
+    margin-top: 1%;
+    margin-left: 10%;
+    z-index: 10000;
+ }
+ .titulo1{
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-size: 500%;
+    margin-top: 0%;
+    margin-left: 10%;
+    z-index: 10000;
+ }
+ .titulo2{
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-size: 500%;
+    margin-top: 1%;
+    margin-left: 10%;
+    z-index: 10000;
+ }
+ @media only screen and (max-width: 600px) {
+      .titulo1{
+        font-family: 'Courier New', Courier, monospace;
+        position:absolute;
+        font-size: 340%;
+        margin-top: 5%;
+        margin-left: 10%;
+        z-index: 10000;
+     }
+     .titulo2{
+        font-family: 'Courier New', Courier, monospace;
+        position:absolute;
+        font-size: 340%;
+        margin-top: 5%;
+        margin-left: 10%;
+        z-index: 10000;
+     }
+  }
+ 
+.console{
+    margin-top: 25%;
+ }
+ 
+.frontend{
+    margin-top: 10%;
+ }
+ 
+.diretorio{
+    margin-top: 20%;
+ }
+ 
+.code{
+    margin-top: 23%;
+ }
+ 
+.bug{
+    margin-top: 20%;
+ }
+ 
+.api{
+    margin-top: 13%;
+ }
+ 
+ .backend{
+     margin-top: 11%;
+ }
+ 
+.build{
+    margin-top: 10%;
+}
+ 
+.cache{
+    margin-top: 9%;
+}
+ 
+.chatbot{
+    margin-top: 20%;
+}
+ 
+.code{
+    margin-top: 17%;
+}
+ 
+.refatorar{
+    margin-top: 18%;
+}
+ 
+.console{
+    margin-top: 10%;
+}
+ 
+.cookie{
+    margin-top: 11%;
+}
+ 
+.dev{
+    margin-top: 10%;
+}
+.debug{
+    margin-left: -5%;
+    margin-top: 13%;
+}
+ 
+.diretorio{
+    margin-top: 50%;
+}
+ 
+.frontend{
+    margin-top: 29%;
+}
+ 
+.fullstack{
+    margin-top: 21%;
+    padding-right: 10%;
+}
+ 
+.indentar{
+    margin-top: 33%;
+    padding-right: 20%;
+}
+ 
+.biblioteca{
+    margin-top: 8%;
+}
+
+/*CSS do menu*/
+.imagem-menu{
+    border-color: white;
+    border-radius: 40px;
+    background: white;
+    padding: 20px;
+}
+
